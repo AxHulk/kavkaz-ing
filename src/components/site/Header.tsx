@@ -1,0 +1,74 @@
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
+import { Button } from "@/components/ui/button";
+
+const navItems = [
+  { label: "О компании", href: "#about" },
+  { label: "Портфолио", href: "#projects" },
+  { label: "Контакты", href: "#contacts" },
+  { label: "Орган по сертификации", href: "#certification" },
+  { label: "Услуги", href: "#services" },
+  { label: "Вакансии", href: "#careers" },
+];
+
+export const Header = () => {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <header className="fixed top-0 inset-x-0 z-50 bg-background/70 backdrop-blur-xl border-b border-border/40">
+      <div className="container flex items-center justify-between h-20">
+        <a href="#" className="flex items-center gap-3 group">
+          <img src={logo} alt="Логотип КАВКАЗ-ИНЖИРИНГ" className="h-10 w-auto" width={48} height={40} />
+          <span className="hidden sm:flex flex-col leading-tight">
+            <span className="text-sm font-bold tracking-wider text-foreground">КАВКАЗ</span>
+            <span className="text-xs font-medium tracking-[0.2em] text-accent">ИНЖИРИНГ</span>
+          </span>
+        </a>
+
+        <nav className="hidden lg:flex items-center gap-1">
+          {navItems.map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-smooth rounded-full hover:bg-secondary/60"
+            >
+              {item.label}
+            </a>
+          ))}
+        </nav>
+
+        <div className="hidden lg:block">
+          <Button variant="brand" size="sm" asChild>
+            <a href="#contacts">Связаться</a>
+          </Button>
+        </div>
+
+        <button
+          aria-label="Меню"
+          className="lg:hidden p-2 text-foreground"
+          onClick={() => setOpen(!open)}
+        >
+          {open ? <X size={24} /> : <Menu size={24} />}
+        </button>
+      </div>
+
+      {open && (
+        <div className="lg:hidden border-t border-border/40 bg-background/95 backdrop-blur-xl">
+          <nav className="container flex flex-col py-4 gap-1">
+            {navItems.map((item) => (
+              <a
+                key={item.href}
+                href={item.href}
+                onClick={() => setOpen(false)}
+                className="px-4 py-3 text-sm text-muted-foreground hover:text-foreground hover:bg-secondary/60 rounded-lg transition-smooth"
+              >
+                {item.label}
+              </a>
+            ))}
+          </nav>
+        </div>
+      )}
+    </header>
+  );
+};
