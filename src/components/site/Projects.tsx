@@ -1,23 +1,27 @@
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import mamison from "@/assets/project-mamison.jpg";
 import veduchi from "@/assets/project-veduchi.jpg";
-import elbrus from "@/assets/project-elbrus.jpg";
+import elbrus from "@/assets/projects/elbrus/01.jpg";
 
 const projects = [
   {
+    slug: "mamison",
     title: "Мамисон",
     img: mamison,
     desc: "Инженерное сопровождение строительства гаража ратраков и СИС.",
     tag: "Северная Осетия",
   },
   {
+    slug: "veduchi",
     title: "Ведучи",
     img: veduchi,
     desc: "Техническое сопровождение создания системы искусственного снегообразования.",
     tag: "Чеченская Республика",
   },
   {
+    slug: "elbrus",
     title: "Эльбрус",
     img: elbrus,
     desc: "Система искусственного снегообразования (СИС) и Альп-городок.",
@@ -70,11 +74,11 @@ export const Projects = () => {
                 <p className="text-sm text-muted-foreground mb-6 leading-relaxed">{p.desc}</p>
                 <div className="flex items-center gap-3">
                   <Button variant="brand" size="sm" asChild>
-                    <a href="#projects">Подробнее</a>
+                    <Link to={`/portfolio/${p.slug}`}>Подробнее</Link>
                   </Button>
-                  <a href="#projects" className="text-xs text-muted-foreground hover:text-accent transition-smooth inline-flex items-center gap-1.5">
+                  <Link to="/portfolio" className="text-xs text-muted-foreground hover:text-accent transition-smooth inline-flex items-center gap-1.5">
                     Все проекты <ArrowRight size={14} />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </article>
