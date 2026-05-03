@@ -87,8 +87,7 @@ const Portfolio = () => {
                     </div>
                   </div>
 
-                  <div className="flex items-center justify-between">
-                    <span className="text-sm text-muted-foreground">{p.year}</span>
+                  <div className="flex items-center justify-end">
                     <span className="inline-flex items-center gap-2 text-sm font-medium text-accent group-hover:gap-3 transition-smooth">
                       Смотреть проект
                       <span className="h-10 w-10 rounded-full bg-gradient-brand flex items-center justify-center text-primary-foreground">
