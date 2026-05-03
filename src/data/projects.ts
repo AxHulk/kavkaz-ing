@@ -1,4 +1,13 @@
-import mamisonCover from "@/assets/project-mamison.jpg";
+import mamison01 from "@/assets/projects/mamison/01.jpg";
+import mamison02 from "@/assets/projects/mamison/02.jpg";
+import mamison03 from "@/assets/projects/mamison/03.jpg";
+import mamison04 from "@/assets/projects/mamison/04.jpg";
+import mamison05 from "@/assets/projects/mamison/05.jpg";
+import mamison06 from "@/assets/projects/mamison/06.jpg";
+import mamison07 from "@/assets/projects/mamison/07.jpg";
+import mamison08 from "@/assets/projects/mamison/08.jpg";
+import mamison09 from "@/assets/projects/mamison/09.jpg";
+import mamison10 from "@/assets/projects/mamison/10.jpg";
 
 import elbrusCover from "@/assets/projects/elbrus/01.jpg";
 import elbrus01 from "@/assets/projects/elbrus/01.jpg";
@@ -70,13 +79,18 @@ export const projects: Project[] = [
   {
     slug: "mamison",
     title: "Мамисон",
-    subtitle: "Гараж ратраков и СИС",
+    subtitle: "Инженерное сопровождение строительства гаража ратраков и Системы искусственного снегообразования",
     location: "Республика Северная Осетия — Алания",
-    scope: ["Исполнительная документация", "Геодезия", "Мониторинг"],
+    scope: [
+      "Инженерное сопровождение",
+      "Геодезическое обеспечение",
+      "Исполнительная документация",
+      "Строительный контроль",
+    ],
     description:
-      "Инженерное сопровождение строительства гаража ратраков и системы искусственного снегообразования на новом всесезонном курорте «Мамисон».",
-    cover: mamisonCover,
-    gallery: [],
+      "Инженерное сопровождение строительства гаража ратраков и системы искусственного снегообразования на новом всесезонном горном курорте «Мамисон». Работы охватывают объекты канатных дорог, инженерные сети и инфраструктуру курорта в условиях высокогорья.",
+    cover: mamison01,
+    gallery: [mamison01, mamison02, mamison03, mamison04, mamison05, mamison06, mamison07, mamison08, mamison09, mamison10],
   },
 ];
 
