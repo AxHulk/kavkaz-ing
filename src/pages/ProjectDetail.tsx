@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useParams, Navigate } from "react-router-dom";
-import { ArrowLeft, MapPin, Calendar, CheckCircle2 } from "lucide-react";
+import { ArrowLeft, MapPin, CheckCircle2 } from "lucide-react";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { Lightbox } from "@/components/site/Lightbox";
@@ -72,12 +72,6 @@ const ProjectDetail = () => {
 
             <aside className="lg:col-span-5 lg:pl-8 lg:border-l border-border/40">
               <dl className="space-y-6">
-                <div>
-                  <dt className="text-xs tracking-[0.25em] uppercase text-muted-foreground mb-2 inline-flex items-center gap-2">
-                    <Calendar size={12} /> Сроки реализации
-                  </dt>
-                  <dd className="text-lg font-semibold">{project.year}</dd>
-                </div>
                 <div>
                   <dt className="text-xs tracking-[0.25em] uppercase text-muted-foreground mb-3">
                     Состав работ
