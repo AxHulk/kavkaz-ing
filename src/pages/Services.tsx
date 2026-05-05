@@ -151,7 +151,7 @@ const Services = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
-            {services.map((s, i) => (
+            {services.map((s) => (
               <article
                 key={s.title}
                 className="group relative rounded-3xl overflow-hidden border border-border/60 bg-gradient-card shadow-card hover:shadow-elegant hover:-translate-y-1 transition-smooth"
