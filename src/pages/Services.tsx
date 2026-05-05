@@ -53,25 +53,25 @@ const services = [
     icon: Mountain,
     title: "Техническое и геодезическое сопровождение объектов",
     desc: "От этапа котлована до ввода в эксплуатацию.",
-    img: executiveImg,
+    img: elbrusResort,
   },
   {
     icon: Activity,
     title: "Инженерное сопровождение и геомониторинг",
     desc: "Постоянный контроль за состоянием конструкций и грунтов.",
-    img: engineeringImg,
+    img: veduchiResort,
   },
   {
     icon: FileText,
     title: "Разработка исполнительной документации",
     desc: "Формирование полного пакета документов (АОСР, АОК, исполнительные схемы).",
-    img: geoBaseImg,
+    img: mamisonResort,
   },
   {
     icon: Layers,
     title: "Взаимодействие со строительным контролем",
     desc: "Защита и закрытие объёмов выполненных работ по договору.",
-    img: geoControlImg,
+    img: elbrusResort2,
   },
 ];
 
