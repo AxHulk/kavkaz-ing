@@ -7,7 +7,7 @@ const navItems = [
   { label: "О компании", href: "/about" },
   { label: "Портфолио", href: "/portfolio" },
   { label: "Контакты", href: "/contacts" },
-  { label: "Орган по сертификации", href: "#certification" },
+  { label: "Орган по сертификации", href: "https://osp-kavkaz-ing.ru/", external: true },
   { label: "Услуги", href: "/services" },
   { label: "Вакансии", href: "#careers" },
 ];
@@ -31,6 +31,7 @@ export const Header = () => {
             <a
               key={item.href}
               href={item.href}
+              {...(item.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
               className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-smooth rounded-full hover:bg-secondary/60"
             >
               {item.label}
@@ -60,6 +61,7 @@ export const Header = () => {
               <a
                 key={item.href}
                 href={item.href}
+                {...(item.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                 onClick={() => setOpen(false)}
                 className="px-4 py-3 text-sm text-muted-foreground hover:text-foreground hover:bg-secondary/60 rounded-lg transition-smooth"
               >
