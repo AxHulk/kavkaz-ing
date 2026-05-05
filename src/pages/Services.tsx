@@ -196,27 +196,23 @@ const Services = () => {
                 </div>
               </div>
 
-              <p className="text-muted-foreground leading-relaxed text-lg max-w-4xl mb-8">
+              <p className="text-foreground/75 leading-relaxed text-base md:text-lg mb-8">
                 Геомониторинг — система слежения за параметрами, характеризующими основания зданий или сооружений (т.е. геологической среды), которая обеспечивает безопасное и эффективное осуществление строительно-технологических процессов, ввод и последующую эксплуатацию зданий и сооружений.
               </p>
 
               <div className="space-y-5">
-                <div className="flex gap-4 items-start">
-                  <div className="mt-2 w-2 h-2 rounded-full bg-accent shrink-0" />
-                  <p className="text-base md:text-lg leading-relaxed">
+                <div className="flex gap-3 items-start">
+                  <div className="mt-2.5 w-1.5 h-1.5 rounded-full bg-accent shrink-0" />
+                  <p className="text-base md:text-lg leading-relaxed text-foreground/75">
                     <span className="font-semibold text-accent">Целью геомониторинга</span>{" "}
-                    <span className="text-muted-foreground">
-                      является обеспечение высокого качества строительства и сохранности зданий и сооружений окружающей застройки.
-                    </span>
+                    является обеспечение высокого качества строительства и сохранности зданий и сооружений окружающей застройки.
                   </p>
                 </div>
-                <div className="flex gap-4 items-start">
-                  <div className="mt-2 w-2 h-2 rounded-full bg-accent shrink-0" />
-                  <p className="text-base md:text-lg leading-relaxed">
+                <div className="flex gap-3 items-start">
+                  <div className="mt-2.5 w-1.5 h-1.5 rounded-full bg-accent shrink-0" />
+                  <p className="text-base md:text-lg leading-relaxed text-foreground/75">
                     <span className="font-semibold text-accent">Задача геомониторинга</span>{" "}
-                    <span className="text-muted-foreground">
-                      — регулярное отслеживание поведения основания строящегося сооружения и его конструкций, окружающих его зданий, а также принятие мер по обеспечению безопасного строительства и корректировки конструктивно-технологических решений.
-                    </span>
+                    — регулярное отслеживание поведения основания строящегося сооружения и его конструкций, окружающих его зданий, а также принятие мер по обеспечению безопасного строительства и корректировки конструктивно-технологических решений.
                   </p>
                 </div>
               </div>
