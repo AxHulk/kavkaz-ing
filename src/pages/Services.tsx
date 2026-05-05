@@ -127,9 +127,6 @@ const Services = () => {
                 key={t.title}
                 className="group relative rounded-3xl bg-gradient-card border border-border/60 p-8 shadow-card hover:shadow-elegant hover:-translate-y-1 transition-smooth overflow-hidden"
               >
-                <div className="absolute top-6 right-6 text-xs font-mono text-muted-foreground/50">
-                  0{i + 1}
-                </div>
                 <div className="w-14 h-14 rounded-2xl bg-gradient-brand flex items-center justify-center mb-6 shadow-elegant">
                   <t.icon className="text-primary-foreground" size={26} />
                 </div>
