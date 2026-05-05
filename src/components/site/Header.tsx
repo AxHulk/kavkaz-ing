@@ -9,7 +9,7 @@ const navItems = [
   { label: "Контакты", href: "/contacts" },
   { label: "Орган по сертификации", href: "https://osp-kavkaz-ing.ru/", external: true },
   { label: "Услуги", href: "/services" },
-  { label: "Вакансии", href: "#careers" },
+  
 ];
 
 export const Header = () => {
