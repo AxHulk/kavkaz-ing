@@ -182,7 +182,7 @@ const Services = () => {
       <section className="py-24 md:py-32">
         <div className="container">
           <span className="text-xs font-medium tracking-[0.3em] text-accent uppercase mb-4 block">
-            03 / Геомониторинг
+            Геомониторинг
           </span>
           <div className="rounded-3xl border border-border/60 bg-gradient-card shadow-card overflow-hidden">
             <div className="p-8 md:p-12">
