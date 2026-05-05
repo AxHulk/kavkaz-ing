@@ -20,6 +20,10 @@ import geoControlImg from "@/assets/services/geo-control.jpg";
 import engineeringImg from "@/assets/services/engineering.jpg";
 import executiveImg from "@/assets/services/executive-survey.jpg";
 import geoBaseImg from "@/assets/services/geo-base.jpg";
+import elbrusResort from "@/assets/projects/elbrus/01.jpg";
+import veduchiResort from "@/assets/projects/veduchi/01.jpg";
+import mamisonResort from "@/assets/projects/mamison/01.jpg";
+import elbrusResort2 from "@/assets/projects/elbrus/02.jpg";
 
 const keyTasks = [
   {
