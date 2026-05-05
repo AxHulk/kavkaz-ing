@@ -6,9 +6,9 @@ import { Button } from "@/components/ui/button";
 const navItems = [
   { label: "О компании", href: "/about" },
   { label: "Портфолио", href: "/portfolio" },
-  { label: "Контакты", href: "/contacts" },
-  { label: "Орган по сертификации", href: "https://osp-kavkaz-ing.ru/", external: true },
   { label: "Услуги", href: "/services" },
+  { label: "Орган по сертификации", href: "https://osp-kavkaz-ing.ru/", external: true },
+  { label: "Контакты", href: "/contacts" },
   
 ];
 
