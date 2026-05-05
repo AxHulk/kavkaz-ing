@@ -167,9 +167,6 @@ const Services = () => {
                   <div className="absolute top-5 left-5 w-12 h-12 rounded-2xl bg-background/40 backdrop-blur-md border border-foreground/10 flex items-center justify-center">
                     <s.icon className="text-accent" size={22} />
                   </div>
-                  <div className="absolute top-5 right-5 text-xs font-mono text-foreground/70">
-                    0{i + 1}
-                  </div>
                 </div>
                 <div className="p-8">
                   <h3 className="text-xl font-semibold mb-3 leading-snug">{s.title}</h3>
