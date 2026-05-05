@@ -20,6 +20,10 @@ import geoControlImg from "@/assets/services/geo-control.jpg";
 import engineeringImg from "@/assets/services/engineering.jpg";
 import executiveImg from "@/assets/services/executive-survey.jpg";
 import geoBaseImg from "@/assets/services/geo-base.jpg";
+import elbrusResort from "@/assets/projects/elbrus/01.jpg";
+import veduchiResort from "@/assets/projects/veduchi/01.jpg";
+import mamisonResort from "@/assets/projects/mamison/01.jpg";
+import elbrusResort2 from "@/assets/projects/elbrus/02.jpg";
 
 const keyTasks = [
   {
@@ -49,25 +53,25 @@ const services = [
     icon: Mountain,
     title: "Техническое и геодезическое сопровождение объектов",
     desc: "От этапа котлована до ввода в эксплуатацию.",
-    img: executiveImg,
+    img: elbrusResort,
   },
   {
     icon: Activity,
     title: "Инженерное сопровождение и геомониторинг",
     desc: "Постоянный контроль за состоянием конструкций и грунтов.",
-    img: engineeringImg,
+    img: veduchiResort,
   },
   {
     icon: FileText,
     title: "Разработка исполнительной документации",
     desc: "Формирование полного пакета документов (АОСР, АОК, исполнительные схемы).",
-    img: geoBaseImg,
+    img: mamisonResort,
   },
   {
     icon: Layers,
     title: "Взаимодействие со строительным контролем",
     desc: "Защита и закрытие объёмов выполненных работ по договору.",
-    img: geoControlImg,
+    img: elbrusResort2,
   },
 ];
 
@@ -107,7 +111,7 @@ const Services = () => {
         <div className="container">
           <div className="max-w-2xl mb-16">
             <span className="text-xs font-medium tracking-[0.3em] text-accent uppercase mb-4 block">
-              01 / Ключевые задачи
+              Ключевые задачи
             </span>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Технологическое <span className="text-gradient">превосходство</span>
@@ -123,9 +127,6 @@ const Services = () => {
                 key={t.title}
                 className="group relative rounded-3xl bg-gradient-card border border-border/60 p-8 shadow-card hover:shadow-elegant hover:-translate-y-1 transition-smooth overflow-hidden"
               >
-                <div className="absolute top-6 right-6 text-xs font-mono text-muted-foreground/50">
-                  0{i + 1}
-                </div>
                 <div className="w-14 h-14 rounded-2xl bg-gradient-brand flex items-center justify-center mb-6 shadow-elegant">
                   <t.icon className="text-primary-foreground" size={26} />
                 </div>
@@ -142,7 +143,7 @@ const Services = () => {
         <div className="container">
           <div className="max-w-2xl mb-16">
             <span className="text-xs font-medium tracking-[0.3em] text-accent uppercase mb-4 block">
-              02 / Услуги
+              Услуги
             </span>
             <h2 className="text-4xl md:text-5xl font-bold">
               Что мы <span className="text-gradient">делаем</span>
@@ -150,7 +151,7 @@ const Services = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
-            {services.map((s, i) => (
+            {services.map((s) => (
               <article
                 key={s.title}
                 className="group relative rounded-3xl overflow-hidden border border-border/60 bg-gradient-card shadow-card hover:shadow-elegant hover:-translate-y-1 transition-smooth"
@@ -165,9 +166,6 @@ const Services = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent" />
                   <div className="absolute top-5 left-5 w-12 h-12 rounded-2xl bg-background/40 backdrop-blur-md border border-foreground/10 flex items-center justify-center">
                     <s.icon className="text-accent" size={22} />
-                  </div>
-                  <div className="absolute top-5 right-5 text-xs font-mono text-foreground/70">
-                    0{i + 1}
                   </div>
                 </div>
                 <div className="p-8">
@@ -184,7 +182,7 @@ const Services = () => {
       <section className="py-24 md:py-32">
         <div className="container">
           <span className="text-xs font-medium tracking-[0.3em] text-accent uppercase mb-4 block">
-            03 / Геомониторинг
+            Геомониторинг
           </span>
           <div className="rounded-3xl border border-border/60 bg-gradient-card shadow-card overflow-hidden">
             <div className="p-8 md:p-12">
@@ -236,7 +234,7 @@ const Services = () => {
         <div className="container relative">
           <div className="max-w-2xl mb-16">
             <span className="text-xs font-medium tracking-[0.3em] text-accent uppercase mb-4 block">
-              04 / Дополнительно
+              Дополнительно
             </span>
             <h2 className="text-4xl md:text-5xl font-bold">
               Можем оказать <span className="text-gradient">услуги по</span>
