@@ -143,7 +143,7 @@ const Services = () => {
         <div className="container">
           <div className="max-w-2xl mb-16">
             <span className="text-xs font-medium tracking-[0.3em] text-accent uppercase mb-4 block">
-              02 / Услуги
+              Услуги
             </span>
             <h2 className="text-4xl md:text-5xl font-bold">
               Что мы <span className="text-gradient">делаем</span>
