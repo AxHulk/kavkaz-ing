@@ -234,7 +234,7 @@ const Services = () => {
         <div className="container relative">
           <div className="max-w-2xl mb-16">
             <span className="text-xs font-medium tracking-[0.3em] text-accent uppercase mb-4 block">
-              04 / Дополнительно
+              Дополнительно
             </span>
             <h2 className="text-4xl md:text-5xl font-bold">
               Можем оказать <span className="text-gradient">услуги по</span>
