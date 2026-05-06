@@ -1,4 +1,5 @@
 import { Award, Cpu, Layers, Target, Users, Workflow } from "lucide-react";
+import heroBg from "@/assets/projects/elbrus/02.jpg";
 
 const features = [
   {
