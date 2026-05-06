@@ -28,8 +28,8 @@ export const Footer = () => {
           <div>
             <h4 className="text-sm font-semibold mb-4 tracking-wider uppercase">Документы</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><a href="#certification" className="hover:text-accent transition-smooth">Орган по сертификации</a></li>
-              <li><a href="#careers" className="hover:text-accent transition-smooth">Вакансии</a></li>
+              <li><a href="https://osp-kavkaz-ing.ru/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-smooth">Орган по сертификации</a></li>
+              <li><a href="/sout" className="hover:text-accent transition-smooth">Специальная оценка условий труда</a></li>
               <li><a href="#" className="hover:text-accent transition-smooth">Политика конфиденциальности</a></li>
             </ul>
           </div>

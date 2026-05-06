@@ -9,6 +9,7 @@ import ProjectDetail from "./pages/ProjectDetail.tsx";
 import Contacts from "./pages/Contacts.tsx";
 import About from "./pages/About.tsx";
 import Services from "./pages/Services.tsx";
+import Sout from "./pages/Sout.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import { ScrollToTop } from "./components/site/ScrollToTop.tsx";
 
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/sout" element={<Sout />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
