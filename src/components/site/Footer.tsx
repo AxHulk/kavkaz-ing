@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo.svg";
 
 export const Footer = () => {
   return (
@@ -7,9 +7,12 @@ export const Footer = () => {
       <div className="container py-14">
         <div className="grid md:grid-cols-4 gap-10 mb-10">
           <div className="md:col-span-2">
-            <div className="flex items-center gap-3 mb-4">
-              <img src={logo} alt="Логотип" className="h-9 w-auto" width={40} height={36} />
-              <span className="font-bold tracking-wider">КАВКАЗ-ИНЖИРИНГ</span>
+            <div className="mb-4">
+              <img
+                src={logo}
+                alt="Логотип КАВКАЗ-ИНЖИНИРИНГ"
+                className="h-10 w-auto [filter:brightness(0)_invert(1)]"
+              />
             </div>
             <p className="text-sm text-muted-foreground max-w-sm leading-relaxed">
               Точность в расчётах, надёжность в исполнении. Проектирование и сопровождение горнолыжных курортов России.

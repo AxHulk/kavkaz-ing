@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo.svg";
 import { Button } from "@/components/ui/button";
 
 const navItems = [
@@ -19,12 +19,12 @@ export const Header = () => {
   return (
     <header className="fixed top-0 inset-x-0 z-50 bg-background/70 backdrop-blur-xl border-b border-border/40">
       <div className="container flex items-center justify-between h-20">
-        <Link to="/" className="flex items-center gap-3 group">
-          <img src={logo} alt="Логотип КАВКАЗ-ИНЖИРИНГ" className="h-10 w-auto" width={48} height={40} />
-          <span className="hidden sm:flex flex-col leading-tight">
-            <span className="text-sm font-bold tracking-wider text-foreground">КАВКАЗ</span>
-            <span className="text-xs font-medium tracking-[0.2em] text-accent">ИНЖИРИНГ</span>
-          </span>
+        <Link to="/" className="flex items-center group" aria-label="КАВКАЗ-ИНЖИНИРИНГ — на главную">
+          <img
+            src={logo}
+            alt="Логотип КАВКАЗ-ИНЖИНИРИНГ"
+            className="h-9 md:h-11 w-auto [filter:brightness(0)_invert(1)]"
+          />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-1">
