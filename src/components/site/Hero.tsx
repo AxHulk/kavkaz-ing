@@ -34,12 +34,12 @@ export const Hero = () => {
 
           <div className="flex flex-wrap gap-4">
             <Button variant="hero" size="lg" asChild>
-              <a href="#services">
+              <Link to="/services">
                 Наши услуги <ArrowRight className="ml-1" />
-              </a>
+              </Link>
             </Button>
             <Button variant="outlineLight" size="lg" asChild>
-              <a href="#projects">Портфолио</a>
+              <Link to="/portfolio">Портфолио</Link>
             </Button>
           </div>
         </div>
