@@ -35,7 +35,7 @@ export const About = () => {
       <div className="container">
         <div className="max-w-3xl mb-16 text-center mx-auto">
           <span className="text-xs font-medium tracking-[0.3em] text-accent uppercase mb-4 block">
-            02 / О компании
+            О компании
           </span>
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
             Почему выбирают <span className="text-gradient">нас</span>
