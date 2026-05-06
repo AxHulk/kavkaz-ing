@@ -1,8 +1,8 @@
 import { ArrowUpRight } from "lucide-react";
-import docsImg from "@/assets/service-docs.jpg";
-import geodesyImg from "@/assets/service-geodesy.jpg";
-import monitoringImg from "@/assets/service-monitoring.jpg";
-import controlImg from "@/assets/service-control.jpg";
+import docsImg from "@/assets/projects/mamison/03.jpg";
+import geodesyImg from "@/assets/projects/elbrus/04.jpg";
+import monitoringImg from "@/assets/projects/veduchi/02.jpg";
+import controlImg from "@/assets/projects/elbrus/08.jpg";
 
 const services = [
   {
@@ -33,7 +33,7 @@ export const Services = () => {
       <div className="container">
         <div className="max-w-2xl mb-16">
           <span className="text-xs font-medium tracking-[0.3em] text-accent uppercase mb-4 block">
-            01 / Услуги
+            Услуги
           </span>
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
             Наши <span className="text-gradient">услуги</span>

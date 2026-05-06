@@ -1,4 +1,5 @@
 import { Award, Cpu, Layers, Target, Users, Workflow } from "lucide-react";
+import heroBg from "@/assets/projects/elbrus/02.jpg";
 
 const features = [
   {
@@ -35,7 +36,7 @@ export const About = () => {
       <div className="container">
         <div className="max-w-3xl mb-16 text-center mx-auto">
           <span className="text-xs font-medium tracking-[0.3em] text-accent uppercase mb-4 block">
-            02 / О компании
+            О компании
           </span>
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
             Почему выбирают <span className="text-gradient">нас</span>
@@ -54,13 +55,24 @@ export const About = () => {
                 key={f.title}
                 className={`group relative rounded-3xl border border-border/60 p-8 overflow-hidden transition-smooth hover:border-accent/40 ${
                   f.span ?? ""
-                } ${isHero ? "bg-gradient-brand text-primary-foreground" : "bg-gradient-card"}`}
+                } ${isHero ? "text-primary-foreground" : "bg-gradient-card"}`}
               >
-                <div className="flex flex-col h-full">
+                {isHero && (
+                  <>
+                    <img
+                      src={heroBg}
+                      alt="Горнолыжный курорт Эльбрус"
+                      loading="lazy"
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary/70 to-accent/60" />
+                  </>
+                )}
+                <div className="relative flex flex-col h-full">
                   <div
                     className={`w-12 h-12 rounded-2xl flex items-center justify-center mb-6 ${
                       isHero
-                        ? "bg-foreground/10 text-foreground"
+                        ? "bg-white/15 text-primary-foreground backdrop-blur-md"
                         : "bg-accent/10 text-accent group-hover:bg-accent group-hover:text-accent-foreground"
                     } transition-smooth`}
                   >
@@ -69,11 +81,11 @@ export const About = () => {
                   <h3 className={`font-bold mb-3 ${isHero ? "text-3xl md:text-4xl" : "text-xl"}`}>
                     {f.title}
                   </h3>
-                  <p className={`text-sm leading-relaxed ${isHero ? "text-primary-foreground/80 max-w-sm" : "text-muted-foreground"}`}>
+                  <p className={`text-sm leading-relaxed ${isHero ? "text-primary-foreground/90 max-w-sm" : "text-muted-foreground"}`}>
                     {f.desc}
                   </p>
                   {isHero && (
-                    <div className="mt-auto pt-8 flex items-center gap-2 text-xs font-medium tracking-widest uppercase opacity-80">
+                    <div className="mt-auto pt-8 flex items-center gap-2 text-xs font-medium tracking-widest uppercase opacity-90">
                       <Award size={14} /> Профессиональный сервис
                     </div>
                   )}
