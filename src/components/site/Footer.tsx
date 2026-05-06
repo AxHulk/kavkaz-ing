@@ -31,6 +31,7 @@ export const Footer = () => {
               <li><a href="https://osp-kavkaz-ing.ru/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-smooth">Орган по сертификации</a></li>
               <li><a href="/sout" className="hover:text-accent transition-smooth">Специальная оценка условий труда</a></li>
               <li><a href="/privacy" className="hover:text-accent transition-smooth">Политика конфиденциальности</a></li>
+              <li><a href="/terms" className="hover:text-accent transition-smooth">Пользовательское соглашение</a></li>
             </ul>
           </div>
         </div>
