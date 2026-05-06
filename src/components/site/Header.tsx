@@ -42,7 +42,7 @@ export const Header = () => {
 
         <div className="hidden lg:block">
           <Button variant="brand" size="sm" asChild>
-            <a href="#contacts">Связаться</a>
+            <Link to="/contacts">Связаться</Link>
           </Button>
         </div>
 
