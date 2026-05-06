@@ -43,7 +43,7 @@ export const Contact = () => {
                     <div className="text-xs uppercase tracking-widest text-muted-foreground mb-1">{c.label}</div>
                     <div className="text-foreground font-medium">{c.value}</div>
                   </div>
-                </div>
+                </Wrapper>
               );
             })}
           </div>
