@@ -83,12 +83,12 @@ const About = () => {
               <span className="text-xs font-medium tracking-[0.3em] text-accent uppercase mb-6 block">
                 О компании
               </span>
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.05] mb-8">
+              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-[1.05] mb-8 whitespace-nowrap">
                 <span className="text-foreground">ООО</span>{" "}
                 <span className="text-gradient">«КАВКАЗ-ИНЖИРИНГ»</span>
               </h1>
               <p className="text-lg md:text-xl text-foreground/85 leading-relaxed max-w-2xl">
-                Многопрофильный экспертный центр, предоставляющий комплексные услуги по техническому, геодезическому и инженерному сопровождению объектов капитального строительства.
+                Точность в расчётах, надёжность в исполнении.
               </p>
             </div>
           </div>
