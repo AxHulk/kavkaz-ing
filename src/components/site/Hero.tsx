@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import heroImg from "@/assets/hero-mountains.jpg";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
