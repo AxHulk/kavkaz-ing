@@ -19,13 +19,13 @@ export const Header = () => {
   return (
     <header className="fixed top-0 inset-x-0 z-50 bg-background/70 backdrop-blur-xl border-b border-border/40">
       <div className="container flex items-center justify-between h-20">
-        <a href="#" className="flex items-center gap-3 group">
+        <Link to="/" className="flex items-center gap-3 group">
           <img src={logo} alt="Логотип КАВКАЗ-ИНЖИРИНГ" className="h-10 w-auto" width={48} height={40} />
           <span className="hidden sm:flex flex-col leading-tight">
             <span className="text-sm font-bold tracking-wider text-foreground">КАВКАЗ</span>
             <span className="text-xs font-medium tracking-[0.2em] text-accent">ИНЖИРИНГ</span>
           </span>
-        </a>
+        </Link>
 
         <nav className="hidden lg:flex items-center gap-1">
           {navItems.map((item) => (
