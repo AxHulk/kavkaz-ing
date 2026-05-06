@@ -44,19 +44,27 @@ export const About = () => {
           <p className="text-muted-foreground text-base md:text-lg leading-relaxed mb-5">
             ООО «КАВКАЗ-ИНЖИНИРИНГ» — единый центр инжиниринговых компетенций, который оказывает полный комплекс организационных, координационных, административных и инженерно-технических услуг. Весь цикл строительного инжиниринга: от документации до мониторинга.
           </p>
-          <div className="text-left md:text-center text-muted-foreground text-base leading-relaxed space-y-3 max-w-3xl mx-auto">
-            <p className="text-foreground font-semibold">Мы обеспечиваем:</p>
-            <p>
-              <span className="text-foreground font-medium">Подготовку исполнительной документации</span> для объектов любого назначения: сбор данных, анализ, оформление схем и актов по нормативам.
+          <div className="mt-10 max-w-4xl mx-auto">
+            <p className="text-foreground font-semibold text-center text-sm tracking-[0.25em] uppercase text-accent mb-6">
+              Мы обеспечиваем
             </p>
-            <p>
-              <span className="text-foreground font-medium">Геодезическое сопровождение</span> на всех этапах: съёмка, расчёты, отчёты с планами, профилями, аксонометрией.
+            <div className="grid md:grid-cols-3 gap-4 text-left">
+              {[
+                { t: "Подготовку исполнительной документации", d: "Сбор данных, анализ, оформление схем и актов по нормативам для объектов любого назначения." },
+                { t: "Геодезическое сопровождение", d: "Съёмка, расчёты, отчёты с планами, профилями и аксонометрией на всех этапах." },
+                { t: "Геотехнический мониторинг", d: "Контроль грунтов, фундаментов, уровня вод и раннее предупреждение рисков." },
+              ].map((i) => (
+                <div key={i.t} className="rounded-2xl border border-border/60 bg-card/40 p-6 hover:border-accent/40 transition-smooth">
+                  <h4 className="text-foreground font-semibold mb-2 leading-snug">{i.t}</h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{i.d}</p>
+                </div>
+              ))}
+            </div>
+            <p className="text-center text-muted-foreground mt-8">
+              Работаем разово и в формате полного сопровождения.
             </p>
-            <p>
-              <span className="text-foreground font-medium">Геотехнический мониторинг</span> для безопасности строительства: контроль грунтов, фундаментов, уровня вод, раннее предупреждение рисков.
-            </p>
-            <p className="pt-2">
-              Работаем разово и в формате полного сопровождения. <span className="text-accent font-semibold">Доверьте надёжность вашего объекта профессионалам!</span>
+            <p className="text-center text-accent font-semibold text-lg md:text-xl mt-3">
+              Доверьте надёжность вашего объекта профессионалам!
             </p>
           </div>
         </div>
