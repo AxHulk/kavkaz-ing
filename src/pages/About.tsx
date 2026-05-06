@@ -101,6 +101,9 @@ const About = () => {
               <p className="text-foreground/85 text-lg leading-relaxed">
                 Мы специализируемся на комплексном сопровождении сложных инфраструктурных объектов, обеспечивая <span className="text-foreground font-semibold">точность</span>, <span className="text-foreground font-semibold">безопасность</span> и полное соответствие строительных процессов государственным стандартам и проектным решениям.
               </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Заботимся о безопасности и условиях труда сотрудников — результаты <Link to="/sout" className="text-accent hover:underline">специальной оценки условий труда (СОУТ)</Link> опубликованы в открытом доступе.
+              </p>
               <div className="rounded-3xl bg-gradient-brand p-8 md:p-10 text-primary-foreground shadow-elegant">
                 <div className="flex items-center gap-3 mb-4">
                   <Target size={20} />
