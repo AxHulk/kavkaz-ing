@@ -46,7 +46,7 @@ export const Projects = () => {
             </p>
           </div>
           <Button variant="outline" asChild>
-            <a href="#projects">Все проекты <ArrowRight /></a>
+            <Link to="/portfolio">Все проекты <ArrowRight /></Link>
           </Button>
         </div>
 
