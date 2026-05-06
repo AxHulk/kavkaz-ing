@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
 
 export const Footer = () => {
@@ -18,10 +19,10 @@ export const Footer = () => {
           <div>
             <h4 className="text-sm font-semibold mb-4 tracking-wider uppercase">Навигация</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><a href="#about" className="hover:text-accent transition-smooth">О компании</a></li>
-              <li><a href="#services" className="hover:text-accent transition-smooth">Услуги</a></li>
-              <li><a href="#projects" className="hover:text-accent transition-smooth">Портфолио</a></li>
-              <li><a href="#contacts" className="hover:text-accent transition-smooth">Контакты</a></li>
+              <li><Link to="/about" className="hover:text-accent transition-smooth">О компании</Link></li>
+              <li><Link to="/services" className="hover:text-accent transition-smooth">Услуги</Link></li>
+              <li><Link to="/portfolio" className="hover:text-accent transition-smooth">Портфолио</Link></li>
+              <li><Link to="/contacts" className="hover:text-accent transition-smooth">Контакты</Link></li>
             </ul>
           </div>
 
@@ -29,9 +30,9 @@ export const Footer = () => {
             <h4 className="text-sm font-semibold mb-4 tracking-wider uppercase">Документы</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li><a href="https://osp-kavkaz-ing.ru/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-smooth">Орган по сертификации</a></li>
-              <li><a href="/sout" className="hover:text-accent transition-smooth">Специальная оценка условий труда</a></li>
-              <li><a href="/privacy" className="hover:text-accent transition-smooth">Политика конфиденциальности</a></li>
-              <li><a href="/terms" className="hover:text-accent transition-smooth">Пользовательское соглашение</a></li>
+              <li><Link to="/sout" className="hover:text-accent transition-smooth">Специальная оценка условий труда</Link></li>
+              <li><Link to="/privacy" className="hover:text-accent transition-smooth">Политика конфиденциальности</Link></li>
+              <li><Link to="/terms" className="hover:text-accent transition-smooth">Пользовательское соглашение</Link></li>
             </ul>
           </div>
         </div>
