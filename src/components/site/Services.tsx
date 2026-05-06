@@ -33,7 +33,7 @@ export const Services = () => {
       <div className="container">
         <div className="max-w-2xl mb-16">
           <span className="text-xs font-medium tracking-[0.3em] text-accent uppercase mb-4 block">
-            01 / Услуги
+            Услуги
           </span>
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
             Наши <span className="text-gradient">услуги</span>
