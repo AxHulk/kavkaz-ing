@@ -36,7 +36,7 @@ export const Projects = () => {
         <div className="flex flex-wrap items-end justify-between gap-8 mb-16">
           <div className="max-w-2xl">
             <span className="text-xs font-medium tracking-[0.3em] text-accent uppercase mb-4 block">
-              03 / Портфолио
+              Портфолио
             </span>
             <h2 className="text-4xl md:text-6xl font-bold mb-6">
               Наши <span className="text-gradient">проекты</span>
