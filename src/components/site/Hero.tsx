@@ -23,17 +23,9 @@ export const Hero = () => {
             ООО «КАВКАЗ-ИНЖИРИНГ»
           </span>
 
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold leading-[0.95] mb-8">
-            Проектируем будущее
-            <br />
-            <span className="text-gradient">горнолыжных курортов</span>
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold leading-[0.95] mb-10">
+            Точность в расчётах, надёжность в исполнении
           </h1>
-
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-10 leading-relaxed">
-            Точность в расчётах, надёжность в исполнении.<br />
-            Исполнительная документация, геодезическое сопровождение и<br />
-            геотехнический мониторинг для объектов любой сложности.
-          </p>
 
           <div className="flex flex-wrap gap-4">
             <Button variant="hero" size="lg" asChild>
