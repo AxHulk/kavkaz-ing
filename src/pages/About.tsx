@@ -315,9 +315,6 @@ const About = () => {
                     Связаться с нами <ArrowRight size={18} />
                   </Link>
                 </Button>
-                <Button variant="outlineLight" size="lg" asChild>
-                  <Link to="/portfolio">Наши проекты</Link>
-                </Button>
               </div>
             </div>
           </div>
