@@ -129,8 +129,8 @@ const About = () => {
                 className="rounded-3xl object-cover h-[124px] w-full"
               />
               <img
-                src={mountainNight}
-                alt="Ночные горы"
+                src={valleyAerial}
+                alt="Долина с высоты"
                 className="rounded-3xl object-cover h-[124px] w-full"
               />
             </div>
