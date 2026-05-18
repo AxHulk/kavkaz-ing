@@ -119,8 +119,8 @@ const About = () => {
 
             <div className="lg:col-span-5 grid grid-cols-2 gap-4">
               <img
-                src={elbrusGondola}
-                alt="Канатная дорога Эльбрус"
+                src={mountainDay}
+                alt="Горный пейзаж Кавказа"
                 className="rounded-3xl object-cover h-64 w-full row-span-2"
               />
               <img
