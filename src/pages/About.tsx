@@ -1,60 +1,17 @@
 import { Link } from "react-router-dom";
 import {
   ArrowRight,
-  Award,
   CheckCircle2,
-  Compass,
-  FileText,
-  Layers,
-  Lightbulb,
-  Mountain,
-  Settings2,
-  ShieldCheck,
   Target,
-  Users,
 } from "lucide-react";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { Button } from "@/components/ui/button";
 import mountainDay from "@/assets/about/mountain-day.jpg";
-import mountainNight from "@/assets/about/mountain-night.jpg";
 import summerMountain from "@/assets/about/summer-mountain.jpg";
 import valleyAerial from "@/assets/about/valley-aerial.jpg";
-import elbrusGondola from "@/assets/about/elbrus-gondola.jpg";
 import nightGondola from "@/assets/about/night-gondola.jpg";
 import logoMark from "@/assets/logo.svg";
-
-const competencies = [
-  { icon: FileText, title: "Разработка исполнительной документации" },
-  { icon: Settings2, title: "Техническое сопровождение объектов" },
-  { icon: Compass, title: "Геодезическое сопровождение объектов" },
-  { icon: Layers, title: "Инженерное сопровождение" },
-  { icon: Mountain, title: "Геомониторинг" },
-  { icon: ShieldCheck, title: "Взаимодействие со строительным контролем" },
-];
-
-const advantages = [
-  {
-    icon: Layers,
-    title: "Комплексный подход",
-    desc: "Закрываем все вопросы — от геодезического колышка до итоговой сертификации объекта.",
-  },
-  {
-    icon: Lightbulb,
-    title: "Инновации",
-    desc: "Использование автоматизированных систем мониторинга и BIM-технологий при корректировке проектов.",
-  },
-  {
-    icon: Users,
-    title: "Экспертность",
-    desc: "Команда дипломированных инженеров с глубоким пониманием специфики регионального строительства и сложных геологических условий.",
-  },
-  {
-    icon: Settings2,
-    title: "Корректировка проектов",
-    desc: "Адаптация проектных решений под актуальные условия строительства.",
-  },
-];
 
 const departments = [
   "Отдел формирования и ведения ИД по общестроительным работам",
