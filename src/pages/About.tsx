@@ -1,17 +1,58 @@
 import { Link } from "react-router-dom";
 import {
   ArrowRight,
+  Award,
   CheckCircle2,
+  Compass,
+  FileText,
+  Layers,
+  Lightbulb,
+  Mountain,
+  Settings2,
+  ShieldCheck,
   Target,
+  Users,
 } from "lucide-react";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { Button } from "@/components/ui/button";
 import mountainDay from "@/assets/about/mountain-day.jpg";
+import mountainNight from "@/assets/about/mountain-night.jpg";
 import summerMountain from "@/assets/about/summer-mountain.jpg";
 import valleyAerial from "@/assets/about/valley-aerial.jpg";
-import nightGondola from "@/assets/about/night-gondola.jpg";
-import logoMark from "@/assets/logo.svg";
+import elbrusGondola from "@/assets/about/elbrus-gondola.jpg";
+
+const competencies = [
+  { icon: FileText, title: "Разработка исполнительной документации" },
+  { icon: Settings2, title: "Техническое сопровождение объектов" },
+  { icon: Compass, title: "Геодезическое сопровождение объектов" },
+  { icon: Layers, title: "Инженерное сопровождение" },
+  { icon: Mountain, title: "Геомониторинг" },
+  { icon: ShieldCheck, title: "Взаимодействие со строительным контролем" },
+];
+
+const advantages = [
+  {
+    icon: Layers,
+    title: "Комплексный подход",
+    desc: "Закрываем все вопросы — от геодезического колышка до итоговой сертификации объекта.",
+  },
+  {
+    icon: Lightbulb,
+    title: "Инновации",
+    desc: "Использование автоматизированных систем мониторинга и BIM-технологий при корректировке проектов.",
+  },
+  {
+    icon: Users,
+    title: "Экспертность",
+    desc: "Команда дипломированных инженеров с глубоким пониманием специфики регионального строительства и сложных геологических условий.",
+  },
+  {
+    icon: Settings2,
+    title: "Корректировка проектов",
+    desc: "Адаптация проектных решений под актуальные условия строительства.",
+  },
+];
 
 const departments = [
   "Отдел формирования и ведения ИД по общестроительным работам",
@@ -96,75 +137,93 @@ const About = () => {
           </div>
         </section>
 
-        {/* WHAT WE PROVIDE — postcard style */}
-        <section className="relative py-24 md:py-32 overflow-hidden border-y border-border/60">
-          <div className="absolute inset-0">
-            <img
-              src={nightGondola}
-              alt="Кавказские горы ночью"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-background/75 backdrop-blur-[2px]" />
-          </div>
+        {/* COMPETENCIES */}
+        <section className="py-24 md:py-32 bg-secondary/20 border-y border-border/60">
+          <div className="container">
+            <div className="max-w-3xl mb-14">
+              <span className="text-xs font-medium tracking-[0.3em] text-accent uppercase mb-4 block">
+                Наши компетенции
+              </span>
+              <h2 className="text-4xl md:text-5xl font-bold">
+                Что мы делаем <span className="text-gradient">профессионально</span>
+              </h2>
+            </div>
 
-          <div className="container relative">
-            <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-              {/* Left — logo */}
-              <div className="flex justify-center lg:justify-start">
-                <div className="flex flex-col items-center gap-5">
-                  <img
-                    src={logoMark}
-                    alt="Кавказ Инжиниринг"
-                    className="w-40 md:w-56 h-auto opacity-90"
-                  />
-                  <span className="text-foreground/80 text-sm md:text-base font-semibold tracking-[0.35em] uppercase">
-                    Кавказ Инжиниринг
-                  </span>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+              {competencies.map((c, i) => {
+                const Icon = c.icon;
+                return (
+                  <div
+                    key={c.title}
+                    className="group rounded-3xl border border-border/60 bg-gradient-card p-7 hover:border-accent/40 transition-smooth"
+                  >
+                    <div className="flex items-start gap-4">
+                      <div className="w-12 h-12 rounded-2xl bg-accent/10 text-accent flex items-center justify-center shrink-0 group-hover:bg-accent group-hover:text-accent-foreground transition-smooth">
+                        <Icon size={22} />
+                      </div>
+                      <div>
+                        <span className="text-xs font-mono text-accent/60 mb-1 block">
+                          {String(i + 1).padStart(2, "0")}
+                        </span>
+                        <h3 className="text-lg font-semibold leading-snug">{c.title}</h3>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        {/* ADVANTAGES with image */}
+        <section className="py-24 md:py-32">
+          <div className="container">
+            <div className="max-w-3xl mb-14">
+              <span className="text-xs font-medium tracking-[0.3em] text-accent uppercase mb-4 block">
+                Наши преимущества
+              </span>
+              <h2 className="text-4xl md:text-5xl font-bold">
+                Почему нам <span className="text-gradient">доверяют</span>
+              </h2>
+            </div>
+
+            <div className="grid lg:grid-cols-12 gap-6">
+              <div className="lg:col-span-5 relative rounded-3xl overflow-hidden min-h-[420px] shadow-card">
+                <img
+                  src={mountainNight}
+                  alt="Кавказские горы ночью"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/95 via-background/40 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-8">
+                  <div className="flex items-center gap-2 mb-3 text-accent">
+                    <Award size={18} />
+                    <span className="text-xs font-semibold tracking-[0.3em] uppercase">
+                      Качество
+                    </span>
+                  </div>
+                  <p className="text-foreground text-xl font-semibold leading-snug">
+                    Безупречное ведение документации и контроль на каждом этапе жизненного цикла проекта.
+                  </p>
                 </div>
               </div>
 
-              {/* Right — services list */}
-              <div className="max-w-xl">
-                <h2 className="text-3xl md:text-4xl font-bold tracking-[0.15em] text-accent uppercase mb-10">
-                  Мы обеспечиваем:
-                </h2>
-
-                <div className="space-y-7">
-                  <div>
-                    <p className="text-foreground font-semibold text-lg mb-1">
-                      — Подготовку исполнительной документации
-                    </p>
-                    <p className="text-foreground/75 leading-relaxed">
-                      для объектов любого назначения: сбор данных, анализ, оформление схем и актов по нормативам.
-                    </p>
-                  </div>
-
-                  <div>
-                    <p className="text-foreground font-semibold text-lg mb-1">
-                      — Геодезическое сопровождение
-                    </p>
-                    <p className="text-foreground/75 leading-relaxed">
-                      на всех этапах: съёмка, расчёты, отчёты с планами, профилями, аксонометрией.
-                    </p>
-                  </div>
-
-                  <div>
-                    <p className="text-foreground font-semibold text-lg mb-1">
-                      — Геотехнический мониторинг
-                    </p>
-                    <p className="text-foreground/75 leading-relaxed">
-                      для безопасности строительства: контроль грунтов, фундаментов, уровня вод, раннее предупреждение рисков.
-                    </p>
-                  </div>
-                </div>
-
-                <p className="mt-10 text-foreground/85 leading-relaxed">
-                  Работаем разово и в формате полного сопровождения.
-                </p>
-
-                <p className="mt-6 text-accent font-semibold text-lg md:text-xl leading-snug">
-                  Доверьте надёжность вашего объекта профессионалам!
-                </p>
+              <div className="lg:col-span-7 grid sm:grid-cols-2 gap-5">
+                {advantages.map((a) => {
+                  const Icon = a.icon;
+                  return (
+                    <div
+                      key={a.title}
+                      className="rounded-3xl border border-border/60 bg-card/40 p-7 hover:border-accent/40 transition-smooth"
+                    >
+                      <div className="w-11 h-11 rounded-2xl bg-accent/10 text-accent flex items-center justify-center mb-5">
+                        <Icon size={20} />
+                      </div>
+                      <h3 className="text-lg font-semibold mb-3">{a.title}</h3>
+                      <p className="text-sm text-muted-foreground leading-relaxed">{a.desc}</p>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>
