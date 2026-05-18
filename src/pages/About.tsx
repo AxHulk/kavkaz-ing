@@ -21,6 +21,8 @@ import mountainNight from "@/assets/about/mountain-night.jpg";
 import summerMountain from "@/assets/about/summer-mountain.jpg";
 import valleyAerial from "@/assets/about/valley-aerial.jpg";
 import elbrusGondola from "@/assets/about/elbrus-gondola.jpg";
+import nightGondola from "@/assets/about/night-gondola.jpg";
+import logoMark from "@/assets/logo.svg";
 
 const competencies = [
   { icon: FileText, title: "Разработка исполнительной документации" },
