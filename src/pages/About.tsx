@@ -21,6 +21,49 @@ const departments = [
   "Собственный Орган по сертификации",
 ];
 
+const postcardSections = [
+  {
+    eyebrow: "Наши компетенции",
+    title: "Мы обеспечиваем:",
+    items: [
+      {
+        title: "Подготовку исполнительной документации",
+        text: "для объектов любого назначения: сбор данных, анализ, оформление схем и актов по нормативам.",
+      },
+      {
+        title: "Геодезическое сопровождение",
+        text: "на всех этапах: съёмка, расчёты, отчёты с планами, профилями, аксонометрией.",
+      },
+      {
+        title: "Геотехнический мониторинг",
+        text: "для безопасности строительства: контроль грунтов, фундаментов, уровня вод, раннее предупреждение рисков.",
+      },
+    ],
+    note: "Работаем разово и в формате полного сопровождения.",
+    accent: "Доверьте надёжность вашего объекта профессионалам!",
+  },
+  {
+    eyebrow: "Наши преимущества",
+    title: "Вы получаете:",
+    items: [
+      {
+        title: "Комплексный подход",
+        text: "закрываем задачи от геодезического сопровождения до итоговой сертификации объекта.",
+      },
+      {
+        title: "Инженерную точность",
+        text: "работаем с документацией, измерениями и мониторингом без потери контроля на этапах строительства.",
+      },
+      {
+        title: "Надёжное сопровождение",
+        text: "оперативно взаимодействуем со стройконтролем и заказчиком для подтверждения выполненных работ.",
+      },
+    ],
+    note: "Берём ответственность за качество данных, сроков и инженерных решений.",
+    accent: "Ваш объект под контролем профильной команды.",
+  },
+];
+
 const About = () => {
   return (
     <div className="min-h-screen bg-background">
@@ -96,79 +139,71 @@ const About = () => {
           </div>
         </section>
 
-        {/* WHAT WE PROVIDE — postcard style */}
-        <section className="relative py-24 md:py-32 overflow-hidden border-y border-border/60">
-          <div className="absolute inset-0">
-            <img
-              src={nightGondola}
-              alt="Кавказские горы ночью"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-background/75 backdrop-blur-[2px]" />
-          </div>
+        {/* POSTCARD BLOCKS */}
+        <div className="border-y border-border/60 bg-secondary/20 py-16 md:py-24">
+          <div className="container space-y-10 md:space-y-14">
+            {postcardSections.map((section) => (
+              <section
+                key={section.eyebrow}
+                className="relative min-h-[520px] overflow-hidden rounded-3xl border border-border/60 shadow-card"
+              >
+                <img
+                  src={nightGondola}
+                  alt="Горный фон Кавказа"
+                  loading="lazy"
+                  className="absolute inset-0 h-full w-full object-cover"
+                />
+                <div className="absolute inset-0 bg-background/70" />
+                <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/55 to-background/30" />
 
-          <div className="container relative">
-            <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-              {/* Left — logo */}
-              <div className="flex justify-center lg:justify-start">
-                <div className="flex flex-col items-center gap-5">
-                  <img
-                    src={logoMark}
-                    alt="Кавказ Инжиниринг"
-                    className="w-40 md:w-56 h-auto opacity-90"
-                  />
-                  <span className="text-foreground/80 text-sm md:text-base font-semibold tracking-[0.35em] uppercase">
-                    Кавказ Инжиниринг
-                  </span>
+                <div className="relative grid min-h-[520px] items-center gap-10 p-7 md:p-12 lg:grid-cols-[0.85fr_1.15fr] lg:p-16">
+                  <div className="flex justify-center lg:justify-start">
+                    <div className="flex flex-col items-center gap-5 text-center">
+                      <span className="text-xs font-semibold uppercase tracking-[0.35em] text-accent">
+                        {section.eyebrow}
+                      </span>
+                      <img
+                        src={logoMark}
+                        alt="Кавказ Инжиниринг"
+                        loading="lazy"
+                        className="h-auto w-36 opacity-95 md:w-52"
+                      />
+                      <span className="text-sm font-semibold uppercase tracking-[0.32em] text-foreground/80 md:text-base">
+                        Кавказ Инжиниринг
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="max-w-2xl">
+                    <h2 className="mb-9 text-3xl font-bold uppercase leading-tight tracking-[0.15em] text-accent md:text-4xl">
+                      {section.title}
+                    </h2>
+
+                    <div className="space-y-6">
+                      {section.items.map((item) => (
+                        <div key={item.title} className="border-l border-accent/50 pl-5">
+                          <h3 className="mb-1 text-lg font-semibold leading-snug text-foreground">
+                            — {item.title}
+                          </h3>
+                          <p className="leading-relaxed text-foreground/75">
+                            {item.text}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+
+                    <p className="mt-9 leading-relaxed text-foreground/85">
+                      {section.note}
+                    </p>
+                    <p className="mt-5 text-lg font-semibold leading-snug text-accent md:text-xl">
+                      {section.accent}
+                    </p>
+                  </div>
                 </div>
-              </div>
-
-              {/* Right — services list */}
-              <div className="max-w-xl">
-                <h2 className="text-3xl md:text-4xl font-bold tracking-[0.15em] text-accent uppercase mb-10">
-                  Мы обеспечиваем:
-                </h2>
-
-                <div className="space-y-7">
-                  <div>
-                    <p className="text-foreground font-semibold text-lg mb-1">
-                      — Подготовку исполнительной документации
-                    </p>
-                    <p className="text-foreground/75 leading-relaxed">
-                      для объектов любого назначения: сбор данных, анализ, оформление схем и актов по нормативам.
-                    </p>
-                  </div>
-
-                  <div>
-                    <p className="text-foreground font-semibold text-lg mb-1">
-                      — Геодезическое сопровождение
-                    </p>
-                    <p className="text-foreground/75 leading-relaxed">
-                      на всех этапах: съёмка, расчёты, отчёты с планами, профилями, аксонометрией.
-                    </p>
-                  </div>
-
-                  <div>
-                    <p className="text-foreground font-semibold text-lg mb-1">
-                      — Геотехнический мониторинг
-                    </p>
-                    <p className="text-foreground/75 leading-relaxed">
-                      для безопасности строительства: контроль грунтов, фундаментов, уровня вод, раннее предупреждение рисков.
-                    </p>
-                  </div>
-                </div>
-
-                <p className="mt-10 text-foreground/85 leading-relaxed">
-                  Работаем разово и в формате полного сопровождения.
-                </p>
-
-                <p className="mt-6 text-accent font-semibold text-lg md:text-xl leading-snug">
-                  Доверьте надёжность вашего объекта профессионалам!
-                </p>
-              </div>
-            </div>
+              </section>
+            ))}
           </div>
-        </section>
+        </div>
 
         {/* GOAL */}
         <section className="relative py-28 md:py-36 overflow-hidden border-y border-border/60">
