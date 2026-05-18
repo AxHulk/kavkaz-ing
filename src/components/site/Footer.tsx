@@ -15,7 +15,7 @@ export const Footer = () => {
               />
             </div>
             <p className="text-sm text-muted-foreground max-w-sm leading-relaxed">
-              Точность в расчётах, надёжность в исполнении. Проектирование и сопровождение горнолыжных курортов России.
+              Точность в расчётах, надёжность в исполнении.
             </p>
           </div>
 
