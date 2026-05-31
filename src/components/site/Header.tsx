@@ -19,10 +19,10 @@ export const Header = () => {
   return (
     <header className="fixed top-0 inset-x-0 z-50 bg-background/70 backdrop-blur-xl border-b border-border/40">
       <div className="container flex items-center justify-between h-20">
-        <Link to="/" className="flex items-center group" aria-label="КАВКАЗ-ИНЖИНИРИНГ — на главную">
+        <Link to="/" className="flex items-center group" aria-label="КАВКАЗ-ИНЖИРИНГ — на главную">
           <img
             src={logo}
-            alt="Логотип КАВКАЗ-ИНЖИНИРИНГ"
+            alt="Логотип КАВКАЗ-ИНЖИРИНГ"
             className="h-9 md:h-11 w-auto [filter:brightness(0)_invert(1)]"
           />
         </Link>
