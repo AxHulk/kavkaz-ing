@@ -85,7 +85,7 @@ const About = () => {
               </span>
               <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-[1.05] mb-8 whitespace-nowrap">
                 <span className="text-foreground">ООО</span>{" "}
-                <span className="text-gradient">«КАВКАЗ-ИНЖИРИНГ»</span>
+                <span className="text-gradient">«КАВКАЗ-ИНЖИНИРИНГ»</span>
               </h1>
               <p className="text-lg md:text-xl text-foreground/85 leading-relaxed max-w-2xl">
                 Точность в расчётах, надёжность в исполнении.

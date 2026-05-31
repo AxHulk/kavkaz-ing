@@ -20,7 +20,7 @@ export const Hero = () => {
         <div className="max-w-4xl">
           <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-accent/30 bg-accent/10 backdrop-blur-md text-xs font-medium tracking-widest text-accent uppercase mb-8">
             <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
-            ООО «КАВКАЗ-ИНЖИРИНГ»
+            ООО «КАВКАЗ-ИНЖИНИРИНГ»
           </span>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold leading-[0.95] mb-10">

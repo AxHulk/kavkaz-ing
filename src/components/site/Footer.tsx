@@ -10,7 +10,7 @@ export const Footer = () => {
             <div className="mb-4">
               <img
                 src={logo}
-                alt="Логотип КАВКАЗ-ИНЖИРИНГ"
+                alt="Логотип КАВКАЗ-ИНЖИНИРИНГ"
                 className="h-10 w-auto [filter:brightness(0)_invert(1)]"
               />
             </div>
@@ -41,7 +41,7 @@ export const Footer = () => {
         </div>
 
         <div className="pt-8 border-t border-border/60 flex flex-wrap items-center justify-between gap-4 text-xs text-muted-foreground">
-          <span>© {new Date().getFullYear()} ООО «КАВКАЗ-ИНЖИРИНГ». Все права защищены.</span>
+          <span>© {new Date().getFullYear()} ООО «КАВКАЗ-ИНЖИНИРИНГ». Все права защищены.</span>
           <span>Сделано с вниманием к деталям</span>
         </div>
       </div>

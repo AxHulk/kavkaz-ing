@@ -79,7 +79,7 @@ export const Expertise = () => {
             Документация и инженерное <span className="text-gradient">сопровождение</span>
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
-            <span className="text-foreground font-semibold">ООО «КАВКАЗ-ИНЖИРИНГ»</span> разрабатывает документацию для любых видов строительных работ. Беремся за задачи любой сложности и объёма, имеем опыт работы со всеми типами объектов.
+            <span className="text-foreground font-semibold">ООО «КАВКАЗ-ИНЖИНИРИНГ»</span> разрабатывает документацию для любых видов строительных работ. Беремся за задачи любой сложности и объёма, имеем опыт работы со всеми типами объектов.
           </p>
         </div>
 

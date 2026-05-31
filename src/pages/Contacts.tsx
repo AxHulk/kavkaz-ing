@@ -11,8 +11,8 @@ import { extractDigits, formatPhone, isValidRuPhone } from "@/lib/phone";
 
 const Contacts = () => {
   useEffect(() => {
-    document.title = "Контакты — КАВКАЗ-ИНЖИРИНГ";
-    const desc = "Контакты ООО «КАВКАЗ-ИНЖИРИНГ»: г. Пятигорск, ул. Ермолова 12, стр. 3. Телефон +7 (918) 784-61-21, info@kavkaz-ing.ru.";
+    document.title = "Контакты — КАВКАЗ-ИНЖИНИРИНГ";
+    const desc = "Контакты ООО «КАВКАЗ-ИНЖИНИРИНГ»: г. Пятигорск, ул. Ермолова 12, стр. 3. Телефон +7 (918) 784-61-21, info@kavkaz-ing.ru.";
     let meta = document.querySelector('meta[name="description"]');
     if (!meta) {
       meta = document.createElement("meta");
@@ -153,7 +153,7 @@ const Contacts = () => {
                 </div>
                 <div className="text-xs uppercase tracking-[0.3em] opacity-80 mb-3">Орган по сертификации</div>
                 <h3 className="text-2xl font-bold leading-tight mb-3">
-                  ОСП «КАВКАЗ-ИНЖИРИНГ»
+                  ОСП «КАВКАЗ-ИНЖИНИРИНГ»
                 </h3>
                 <p className="text-sm opacity-90 mb-6">
                   Аккредитованный орган по сертификации. Подробности и услуги — на отдельном сайте.
