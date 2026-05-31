@@ -10,7 +10,7 @@ export const Footer = () => {
             <div className="mb-4">
               <img
                 src={logo}
-                alt="Логотип КАВКАЗ-ИНЖИНИРИНГ"
+                alt="Логотип КАВКАЗ-ИНЖИРИНГ"
                 className="h-10 w-auto [filter:brightness(0)_invert(1)]"
               />
             </div>
